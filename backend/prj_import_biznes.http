@@ -1,0 +1,6 @@
+@prj_import_biznes_HostAddress = http://localhost:5240
+
+GET {{prj_import_biznes_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,28 @@
+:root {
+  --bg:#f5f7fb; --panel:#fff; --ink:#111827; --muted:#6b7280;
+}
+* { box-sizing: border-box; }
+html, body, #root { height:100%; }
+body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color:var(--ink); background:var(--bg); }
+.shell { display:grid; grid-template-columns:240px 1fr; min-height:100vh; }
+.sidebar { background:#0f172a; color:#e5e7eb; padding:16px; }
+.sidebar .brand { font-weight:700; margin-bottom:16px; }
+.sidebar nav { display:grid; gap:8px; }
+.sidebar nav a { opacity:.8; text-decoration:none; color:inherit; padding:6px 8px; border-radius:8px; }
+.sidebar nav a.active { background:#1f2937; opacity:1; }
+.main { padding:24px; display:grid; gap:16px; }
+button, select, input { font: inherit; }
+button { cursor:pointer; border:0; background:#2563eb; color:#fff; padding:8px 12px; border-radius:10px; }
+select, input[type="text"], input[type="file"] { padding:8px 10px; border-radius:10px; border:1px solid #e5e7eb; background:#fff; }
+table { width:100%; border-spacing:0; }
+th, td { padding:10px; border-bottom:1px solid #eee; text-align:left; }
+thead th { font-size:12px; color:var(--muted); }
+.shell { display:grid; grid-template-columns:240px 1fr; min-height:100vh; transition: grid-template-columns .2s ease; }
+.shell.collapsed { grid-template-columns:0 1fr; }
+.shell.collapsed .sidebar { width:0; padding:0; overflow:hidden; }
+button.ghost { background:#eef2ff; color:#1e3a8a; }
+
+.badge {background:#eef2ff; color:#3730a3; padding:2px 8px; border-radius:999px; font-size:12px}
+tbody tr:nth-child(even){background:#fafafa}
+tbody td, thead th { padding:10px 12px }
+

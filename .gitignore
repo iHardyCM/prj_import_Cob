@@ -1,0 +1,30 @@
+# Node / Frontend
+node_modules/
+dist/
+build/
+*.log
+
+# Vite
+.vite/
+.cache/
+
+# React
+coverage/
+
+# .NET / Backend
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.pdb
+
+# Config / Secrets
+.env
+.env.*
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
